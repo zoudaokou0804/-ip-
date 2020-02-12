@@ -1,0 +1,8 @@
+CREATE DATABASE proxy_pool CHARACTER SET utf8;
+CREATE TABLE proxy_ip(
+  ip VARCHAR(20) NOT NULL,
+  PORT VARCHAR(255) NOT NULL,
+  speed FLOAT,
+  proxy_type VARCHAR(5),
+  available CHAR(1) DEFAULT NULL
+)DEFAULT CHARSET = utf8;
