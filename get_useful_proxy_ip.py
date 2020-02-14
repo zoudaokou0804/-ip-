@@ -25,6 +25,7 @@ tablename：数据库存储数据表名称
 
 """
 从列表中随机获取请求头的方法
+https://www.toolnb.com/tools/createuseragent.html 通过该网站可以随机生成请求头
 """
 def getheaders():
     user_agent_list = [
@@ -105,10 +106,10 @@ def is_enable(ip_port,li):
                            headers=getheaders(),
                            proxies=proxies,
                            timeout=2)
-        print(ip_port, '能用')
+        print(ip_port, '有效ip')
         li.append(ip_port) # 返回有效ip列表
     except Exception as e:
-        print(ip_port, '不能用')
+        print(ip_port, '无效ip')
 
 
 # 从txt文件中读取数据处理
@@ -187,4 +188,4 @@ def get_useful_proxy_ip(methodflag):
     select_hand_func(methodflag) # 选择处理已爬取ip数据处理方法
 
 if __name__ == '__main__':
-    get_useful_proxy_ip(1)
+    get_useful_proxy_ip(0)
