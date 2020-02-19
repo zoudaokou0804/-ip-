@@ -1,3 +1,14 @@
+#!/user/bin/env python
+# -*- encoding:utf-8 -*_
+'''
+@File:get_proxy_ip.py
+@Time:2020/02/16 00:41:37
+@Author:zoudaokou
+@Version:1.0
+@Contact:wangchao0804@163.com
+@desc:动态获取"免费代理"网站的代理ip
+'''
+
 import requests
 import random
 import json
